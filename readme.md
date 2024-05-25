@@ -4,7 +4,7 @@ Meu nome é Rogério Neves, sou formado em **Análise e Desenvolvimento de Siste
 
 --
 
-><kbd>{c:gray} Meus desenvolvimentos na WMS{/c}</kbd>   
+ >  Meus desenvolvimentos na WMS   
  >- Access e VB6 (Baixa de Boletos, Relatórios);
  >- Automação em Python, ferramentas     pyautogui, pandas, selenium;
  >- Dashboard Financeiro com Excel e Power Bi; 
