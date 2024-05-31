@@ -1,10 +1,11 @@
-
-
 VR_DEP = 0
 VALOR = 0
-SALDO_CC = 0
+SALDO_CC = 2500
 VR_SAQUE = 0
 OPCAO = 0
+VRLD_SAQUE = 1500 # limite de saque
+VTL = 0
+VTL_D = 1500
 
 while True:
             
@@ -14,6 +15,16 @@ while True:
         [3] = Extrato
         [4] = Sair
     """
+        
+    # Opção 4 - sair 
+    if OPCAO == 4:
+        print(f"Saldo da conta R$ {SALDO_CC}")
+        print(F"Limite para saque R$ {VTL_D}")
+        break
+
+    # print(f"Saldo da conta R$ {SALDO_CC}")
+    # print(f"Limite para saque R$ {VTL_D}")
+    print()
     print("Opções :")
     print(mensagem)
     print()
@@ -21,31 +32,66 @@ while True:
     OPCAO = int(input("Digite uma opção : "))
     print()
 
-    if OPCAO == 4:
-        break
+    # Opção 1 - Depósito
     if OPCAO == 1:
-        VALOR = float(input("Digitar valor para depósito : "))      
+        VALOR = float(input("Digitar valor para depósito : "))  
+        # print()    
         if VALOR == 0:
             print("Erro de processamento, valor zero ou negativo")
             continue
         else:
-            VR_DEP  += VALOR 
-            print(f"Valor do depósito R$ {VR_DEP}")
-            VALOR = 0
-            SALDO_CC += VR_DEP
+            # print(f"Valor do depósito R$ {VALOR}")
+            SALDO_CC += VALOR
+            print()
             print(f"Saldo da conta R$ {SALDO_CC}")
-            continue
-    if OPCAO == 2:
-        VR_SAQUE = float(input("Digitar valor para do saque : "))  
-        if SALDO_CC < VR_SAQUE:
-            print("Saldo insuficiente")
-            break
-        else:
-             SALDO_CC -= VR_SAQUE
-             print(f"Saldo da conta R$ {SALDO_CC}")
-             continue
+            print()
+            print(f"Limite para saque R$ {VTL_D}") 
+            print() 
+            VALOR = 0
+    
+    # Opção 2 - Saque
+    elif OPCAO == 2:
        
-print(f"Saldo da conta R$ {SALDO_CC}")
+       if  VTL_D == 0:
+           print(f"Saldo da conta R$ {SALDO_CC}")
+           print(F"Limite para saque R$ {VTL_D}")
+           break
+       else:
+        print("***** Depósito *****")        
+        print()
+        print(f"Saldo da conta R$ {SALDO_CC}")
+        print(f"Limite para saque R$ {VTL_D}") 
+        print()
+        VTL = float(input("Digitar valor do saque : "))
+        
+        if VTL <= 0 :
+            break
+        print()        
+    
+        if VRLD_SAQUE < VTL:
+            print()
+            print(f"Sem limite para saque")
+            print(f"Limite para saque R$ {VTL_D}") 
+            print()
+            break
+        
+        elif VRLD_SAQUE > VTL:
+            print("***** Saque *****")
+            print()
+            VTL_D -= VTL
+            SALDO_CC -= VTL
+            print(f"Saldo da conta R$ {SALDO_CC}")
+            print(f"Limite para saque R$ {VTL_D}") 
+            print()
+            
+    
+    # Opção 3 - Extrato   
+    elif OPCAO == 3:
+        print("***** Extrato da conta *****")
+        print()
+        print(f"Saldo da conta R$ {SALDO_CC}")
+        print(f"Limite para saque R$ {VTL_D}") 
+        print()  
                 
 
             
