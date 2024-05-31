@@ -16,7 +16,7 @@ while True:
         [4] = Sair
     """
         
-    # Opção 4 - sair 
+    # Sair do Sistema Bancário
     if OPCAO == 4:
         print(f"Saldo da conta R$ {SALDO_CC}")
         print(F"Limite para saque R$ {VTL_D}")
@@ -31,32 +31,32 @@ while True:
 
     OPCAO = int(input("Digite uma opção : "))
     print()
-
-    # Opção 1 - Depósito
+	
+	# Depósito
     if OPCAO == 1:
         VALOR = float(input("Digitar valor para depósito : "))  
         # print()    
-        if VALOR == 0:
+        if VALOR == 0: # Zero mensagem e continua
             print("Erro de processamento, valor zero ou negativo")
             continue
         else:
             # print(f"Valor do depósito R$ {VALOR}")
-            SALDO_CC += VALOR
+            SALDO_CC += VALOR # Inclementa a CONSTANTE SALDO_CC
             print()
             print(f"Saldo da conta R$ {SALDO_CC}")
             print()
             print(f"Limite para saque R$ {VTL_D}") 
             print() 
-            VALOR = 0
+            VALOR = 0 # CONSTANTE VALOR, # volta para 0
     
-    # Opção 2 - Saque
+    #  Saque
     elif OPCAO == 2:
        
-       if  VTL_D == 0:
-           print(f"Saldo da conta R$ {SALDO_CC}")
+       if  VTL_D == 0: # Valor do depósito ZERO, sai do PROGRAMA
+           print(f"Saldo da conta R$ {SALDO_CC}") 
            print(F"Limite para saque R$ {VTL_D}")
            break
-       else:
+       else: # Valor do depósito MAIOR QUE ZERO
         print("***** Depósito *****")        
         print()
         print(f"Saldo da conta R$ {SALDO_CC}")
@@ -64,18 +64,17 @@ while True:
         print()
         VTL = float(input("Digitar valor do saque : "))
         
-        if VTL <= 0 :
+        if VTL <= 0 : 
             break
         print()        
     
-        if VRLD_SAQUE < VTL:
-            print()
+        if VRLD_SAQUE < VTL: # Sem limite para SAQUE
             print(f"Sem limite para saque")
             print(f"Limite para saque R$ {VTL_D}") 
             print()
             break
         
-        elif VRLD_SAQUE > VTL:
+        elif VRLD_SAQUE > VTL: # Com limite para SAQUE
             print("***** Saque *****")
             print()
             VTL_D -= VTL
@@ -91,7 +90,7 @@ while True:
         print()
         print(f"Saldo da conta R$ {SALDO_CC}")
         print(f"Limite para saque R$ {VTL_D}") 
-        print()  
+        print() 
                 
 
             
