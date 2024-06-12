@@ -22,8 +22,6 @@ while True:
         print(F"Limite para saque R$ {VTL_D}")
         break
 
-    # print(f"Saldo da conta R$ {SALDO_CC}")
-    # print(f"Limite para saque R$ {VTL_D}")
     print()
     print("Opções :")
     print(mensagem)
