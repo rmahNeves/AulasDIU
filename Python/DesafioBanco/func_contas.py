@@ -1,11 +1,12 @@
 VR_DEP = 0
 VALOR = 0
-SALDO_CC = 2500
+SALDO_CC = 2500 # saldo conta corrente
 VR_SAQUE = 0
 OPCAO = 0
 VRLD_SAQUE = 1500 # limite de saque
 VTL = 0
 VTL_D = 1500
+SALDO_AT = 0
 
 while True:
             
@@ -65,7 +66,9 @@ while True:
         
         if VTL <= 0 :
             break
-        print()        
+        
+        if SALDO_CC < VTL:
+            break        
     
         if VRLD_SAQUE < VTL:
             print()
@@ -78,7 +81,8 @@ while True:
             print()
             VTL += VTL
             VTL_D -= VTL
-            SALDO_CC -= VTL
+            SALDO_AT = SALDO_CC - VTL
+            SALDO_CC = SALDO_AT
             print(f"Saldo da conta R$ {SALDO_CC}")
             print(f"Limite para saque R$ {VTL_D}") 
             print()
