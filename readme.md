@@ -4,24 +4,39 @@ Meu nome é Rogério Neves, sou formado em **Análise e Desenvolvimento de Siste
 
 --
 
- >  Meus desenvolvimentos na WMS   
- >- Access e VB6 (Baixa de Boletos, Relatórios);
- >- Automação em Python, ferramentas     pyautogui, pandas, selenium;
- >- Dashboard Financeiro com Excel e Power Bi; 
- >- Extração de dados com SQL;
- >- DAX (Expressões de análise de dados) 
- >- Power Query (Linguagem M) 
- >- ETL (Extração, transformação e carregamento)
+ >  Conhecimentos   
+ >- Conhecimentos em Delphi, Python e Javascript.
+ >- Conhecimentos avançados em SQL Server, Excel com VBA e Access.
+ >- Atuação em ambientes corporativos com foco em otimização de rotinas,
+ >- integração de sistemas, análise de dados e suporte a usuários. Perfil analítico,
+ >- proativo e comprometido com resultados.
+ >- Integração com bancos de dados SQL Server e Access
+ >- Criação de relatórios dinâmicos e telas customizadas
+ >- Suporte técnico a usuários e documentação de processos
+ >- Atendimento técnico e resolução de problemas complexos
+ >- Criação de planilhas inteligentes com macros e formulários em VBA
+ >- Automação de processos administrativos e financeiros
+ >- Desenvolvimento de consultas e relatórios.
+ >- Apoio à equipe de TI e integração com sistemas legados
+ >- Análise de profile para identificar inconsistências
+ >- Experiência com administração e desenvolvimento em SQL Server
+ >- Criação e manutenção de procedures, views, triggers e funções
+ >- Backup, restore e gerenciamento de permissões
+ >- Dominio em SELECT, JOIN, GROUP BY, HAVING, ORDER BY
+ >- Criação de subconsultas, CTEs (Common Table Expressions) e consultas aninhadas
+ >- Uso de funções de agregação (SUM, COUNT, AVG) e funções
 
 <details>
 
 <summary>Lista de estudos</summary>
 
+- SQL SERVER
 - Python 
 - JavaScript
 - Git
 - GitHub
 - Lógica de Programação
+- Delpi
 
 </details>
 --
